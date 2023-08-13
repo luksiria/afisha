@@ -15,31 +15,19 @@
 <span class="fc" id="L15">        return films;</span>
     }
 
-    public String[] findLast() {
-        int resultLength;
-<span class="fc bfc" id="L20" title="All 2 branches covered.">        if (films.length &lt; 5) {</span>
-<span class="fc" id="L21">            resultLength = films.length;</span>
-        } else {
-<span class="fc" id="L23">            resultLength = 5;</span>
-        }
-<span class="fc" id="L25">        String[] tmp = new String[resultLength];</span>
-<span class="fc bfc" id="L26" title="All 2 branches covered.">        for (int i = 0; i &lt; tmp.length; i++) {</span>
-<span class="fc" id="L27">            tmp[i] = films[films.length - 1 - i];</span>
-        }
-<span class="fc" id="L29">        return tmp;</span>
-    }
+
     public String[] findLast(int limit) {
         int resultLength;
-<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (films.length &lt; limit) {</span>
-<span class="fc" id="L34">            resultLength = films.length;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        if (films.length &lt; limit) {</span>
+<span class="fc" id="L22">            resultLength = films.length;</span>
         } else {
-<span class="fc" id="L36">            resultLength = limit;</span>
+<span class="fc" id="L24">            resultLength = limit;</span>
         }
-<span class="fc" id="L38">        String[] tmp = new String[resultLength];</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (int i = 0; i &lt; tmp.length; i++) {</span>
-<span class="fc" id="L40">            tmp[i] = films[films.length - 1 - i];</span>
+<span class="fc" id="L26">        String[] tmp = new String[resultLength];</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        for (int i = 0; i &lt; tmp.length; i++) {</span>
+<span class="fc" id="L28">            tmp[i] = films[films.length - 1 - i];</span>
         }
-<span class="fc" id="L42">        return tmp;</span>
+<span class="fc" id="L30">        return tmp;</span>
     }
 }
 
